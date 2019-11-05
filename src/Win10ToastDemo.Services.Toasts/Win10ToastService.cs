@@ -13,6 +13,8 @@ namespace Win10ToastDemo.Services.Toasts
     {
         #region Properties
 
+        private const string APP_ID = "SomeId";  //TODO: move id to configuration service, be sure to specify the AppUserModelId on your application's shortcut!
+
         #endregion Properties
 
         #region Construction
@@ -65,8 +67,7 @@ namespace Win10ToastDemo.Services.Toasts
             toastNotification.ExpirationTime = toast.ExpirationTime;
 
             // Show the toast. Be sure to specify the AppUserModelId on your application's shortcut!
-            //ToastNotificationManager.CreateToastNotifier(APP_ID).Show(toastNotification);
-            ToastNotificationManager.CreateToastNotifier("SomeId").Show(toastNotification);  //TODO: externalize Id
+            ToastNotificationManager.CreateToastNotifier(Win10ToastService.APP_ID).Show(toastNotification);
         }
         #endregion SendToast
 
