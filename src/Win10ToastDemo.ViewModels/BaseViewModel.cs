@@ -7,6 +7,9 @@ using System.Text;
 
 namespace Win10ToastDemo.ViewModels
 {
+    /// <summary>
+    /// base ViewModel implementation, supporting INotifyPropertyChanged
+    /// </summary>
     public abstract class BaseViewModel : BaseObject, IViewModel
     {
         #region Properties
@@ -26,7 +29,12 @@ namespace Win10ToastDemo.ViewModels
 
         #region Methods
 
+        #region Initialize: Initialize Method, is being called after the discovery and instanciation of all viewmodels
+        /// <summary>
+        /// Initialize Method, is being called after the discovery and instanciation of all viewmodels
+        /// </summary>
         public abstract void Initialize();
+        #endregion Initialize
 
         #region NotifyPropertyChanged
         public void NotifyPropertyChanged()

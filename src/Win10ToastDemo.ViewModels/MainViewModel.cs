@@ -6,6 +6,9 @@ using System.Text;
 
 namespace Win10ToastDemo.ViewModels
 {
+    /// <summary>
+    /// implementation of the ViewModel for the view MainWindow (reference comes from the view)
+    /// </summary>
     [Locator("MainViewModel")]
     public class MainViewModel : BaseViewModel
     {

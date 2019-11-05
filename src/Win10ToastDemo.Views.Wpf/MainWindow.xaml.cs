@@ -23,7 +23,7 @@ namespace Win10ToastDemo.Views.Wpf
         {
             InitializeComponent();
 
-            DiManager.GetInstance().Resolve<INavigationPresenter>().RegisterPresenter(this.mainFrame);
+            DiManager.GetInstance().Resolve<INavigationPresenter>().RegisterPresenter(this.mainFrame);  //must be done initially to register the frame in which the pages are to be shown
         }
     }
 }

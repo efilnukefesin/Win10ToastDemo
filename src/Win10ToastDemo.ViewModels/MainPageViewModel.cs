@@ -10,12 +10,15 @@ using Win10ToastDemo.Models.Factories;
 
 namespace Win10ToastDemo.ViewModels
 {
+    /// <summary>
+    /// implementation of the ViewModel for the view MainPage (reference comes from the view)
+    /// </summary>
     [Locator("MainPageViewModel")]
     public class MainPageViewModel : BaseViewModel
     {
         #region Properties
 
-        public string SomeText { get; set; } = "HelloWorld";
+        public string SomeText { get; set; } = "HelloWorld";  //some dummy text to demonstrate the working binding
 
         public ICommand SendToastCommand { get; set; }
 
@@ -25,6 +28,10 @@ namespace Win10ToastDemo.ViewModels
 
         #region Construction
 
+        /// <summary>
+        /// the main c'tor
+        /// </summary>
+        /// <param name="ToastService">the toast service implementation to use</param>
         public MainPageViewModel(IToastService ToastService)
         {
             this.toastService = ToastService;
@@ -35,7 +42,10 @@ namespace Win10ToastDemo.ViewModels
 
         #region Methods
 
-        #region setupCommands
+        #region setupCommands: set up the used commands
+        /// <summary>
+        /// set up the used commands
+        /// </summary>
         private void setupCommands()
         {
             this.SendToastCommand = new RelayCommand(this.sendToastCommandExecute, this.sendToastCommandCanExecute);
