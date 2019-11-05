@@ -74,19 +74,13 @@ namespace Win10ToastDemo.Services.Toasts
         #region toastActivated
         private void toastActivated(ToastNotification sender, object e)
         {
-            //TODO: how to react to events? Toast dismissed, clicked etc? Handled in this service or the specific toast?
-            //Dispatcher.Invoke(() =>
-            //{
-            //    Activate();
-            //    Output.Text = "The user activated the toast.";
-            //});
+            //TODO: react to toast, either in a messaging service or the toast itself
         }
         #endregion toastActivated
 
         #region toastDismissed
         private void toastDismissed(ToastNotification sender, ToastDismissedEventArgs e)
         {
-            //TODO: how to react to events? Toast dismissed, clicked etc? Handled in this service or the specific toast?
             String outputText = "";
             switch (e.Reason)
             {
@@ -101,21 +95,14 @@ namespace Win10ToastDemo.Services.Toasts
                     break;
             }
 
-            //Dispatcher.Invoke(() =>
-            //{
-            //    Output.Text = outputText;
-            //});
+            //TODO: react to toast, either in a messaging service or the toast itself
         }
         #endregion toastDismissed
 
         #region toastFailed
         private void toastFailed(ToastNotification sender, ToastFailedEventArgs e)
         {
-            //TODO: how to react to events? Toast dismissed, clicked etc? Handled in this service or the specific toast?
-            //Dispatcher.Invoke(() =>
-            //{
-            //    Output.Text = "The toast encountered an error.";
-            //});
+            //TODO: react to toast, either in a messaging service or the toast itself
         }
         #endregion toastFailed
 
