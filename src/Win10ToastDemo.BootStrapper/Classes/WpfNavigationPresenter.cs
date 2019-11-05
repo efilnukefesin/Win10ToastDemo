@@ -6,7 +6,6 @@ using System.Text;
 
 namespace Win10ToastDemo.BootStrapper.Classes
 {
-    //TODO: move into a more apropriate namespace
     public class WpfNavigationPresenter : BaseWpfNavigationPresenter
     {
         #region Construction

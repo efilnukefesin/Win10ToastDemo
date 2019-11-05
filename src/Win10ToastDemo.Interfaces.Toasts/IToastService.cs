@@ -20,8 +20,6 @@ namespace Win10ToastDemo.Interfaces.Toasts
 
         void SendToast(Toast toast);
 
-        //TODO: how to react to events? Toast dismissed, clicked etc? Handled in this service or the specific toast?
-
         #endregion Methods
 
         #region Events
