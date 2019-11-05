@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>efilnukefesin</Authors>
+    <Company>efilnukefesin.NET</Company>
+    <Copyright>efilnukefesin.NET</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Win10ToastDemo.BootStrapper\Win10ToastDemo.BootStrapper.csproj" />
+    <ProjectReference Include="..\Win10ToastDemo.ViewModels\Win10ToastDemo.ViewModels.csproj" />
+    <ProjectReference Include="..\Win10ToastDemo.Views.Wpf\Win10ToastDemo.Views.Wpf.csproj" />
+  </ItemGroup>
+
+</Project>
