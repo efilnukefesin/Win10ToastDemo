@@ -10,3 +10,4 @@ Features of this implementation:
 - Toast Model is abstracted from Win 10 SDK Toast and can be used on any platform
 - made use of IoC
 - .NET Core and .NET Standard implementation
+- Builder for toasts included
